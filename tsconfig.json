@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "alwaysStrict": true,
+      "declaration": true,
+      "lib": [ "dom", "es2015" ],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "strict": true,
+      "strictNullChecks": true,
+      "target": "es5",
+    }
+}

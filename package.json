@@ -1,0 +1,26 @@
+{
+  "name": "@creately/random",
+  "version": "1.0.0",
+  "description": "Simple random ID generation module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creately/random.git"
+  },
+  "keywords": [
+    "randomid",
+    "random-id",
+    "base62",
+    "id"
+  ],
+  "author": "Creately",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creately/random/issues"
+  },
+  "homepage": "https://github.com/creately/random#readme"
+}
