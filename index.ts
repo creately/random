@@ -1,14 +1,17 @@
-export function Random () {
-    const BASE62 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split( '' );
-    const base62 = ( size: number ): string => {
+export class Random  {
+
+    protected static BASE62 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split( '' );
+
+    public static base62 ( size: number ): string  {
         const bytes = crypto.getRandomValues( new Uint8Array( size ));
         const chars = [];
         for ( let i = 0; i < size; ++i ) {
-            chars[i] = BASE62[bytes[i] % 62];
+            chars[i] = this.BASE62[bytes[i] % 62];
         }
         return chars.join( '' );
     }
-    return {
-        id: ( size: number ) => base62( size )
+
+    public static id ( size: number ): string {
+        return this.base62( size )
     }
 }
